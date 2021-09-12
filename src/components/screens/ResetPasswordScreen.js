@@ -30,7 +30,7 @@ const ResetPasswordScreen = ({ match }) => {
 
     try {
       const { data } = await axios.put(
-        `/api/auth/resetpassword/${match.params.resetToken}`,
+        `https://crmapp-fullstack.herokuapp.com/resetpassword/${match.params.resetToken}`,
         {
           password,
         },

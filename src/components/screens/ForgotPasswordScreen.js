@@ -15,7 +15,7 @@ const ForgotPasswordScreen = () => {
     }}
 
 try {
-  const {data}= await axios.post("/api/auth/forgotpassword",{username_emailid},config);
+  const {data}= await axios.post("https://crmapp-fullstack.herokuapp.com/forgotpassword",{username_emailid},config);
   setSuccess(data.data)
 } catch (error) {
   setError(error.response.data.error);
