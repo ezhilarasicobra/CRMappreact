@@ -18,7 +18,7 @@ const PrivateScreen = ({history}) => {
       };
 
       try {
-        const { data } = await axios.get("https://crmapp-fullstack.herokuapp.com//private", config);
+        const { data } = await axios.get("https://crmapp-fullstack.herokuapp.com/api/private", config);
         setPrivateData(data.data);
      
         console.log(data)
