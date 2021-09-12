@@ -28,7 +28,7 @@ const RegisterScreen = ({history}) => {
       return setError("Password does not match");
     }
     try {
-      const {data}=await axios.post("/api/auth/register",{
+      const {data}=await axios.post("https://crmapp-fullstack.herokuapp.com/api/auth/register",{
         Firstname,Lastname,Type_of_user,username_emailid,password
       },config);
       localStorage.setItem("authToken",data.token)
