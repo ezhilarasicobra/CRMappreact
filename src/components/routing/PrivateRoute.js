@@ -10,7 +10,7 @@ const PrivateRoute = ({ component: Component,...rest }) => {
         localStorage.getItem("authToken") ? (
           <Component {...props} />
         ) : (
-          <Redirect to="https://crmapp-fullstack.herokuapp.com/login"/>
+          <Redirect to="https://crmapp-fullstack.herokuapp.com/api/auth/login"/>
         )
       }
     />
