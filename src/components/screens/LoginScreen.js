@@ -25,7 +25,7 @@ const LoginScreen = ({ history }) => {
 
     try {
       const { data } = await axios.post(
-        "/api/auth/login",
+        "https://crmapp-fullstack.herokuapp.com/api/auth/login",
         { username_emailid, password },
         config
       );
